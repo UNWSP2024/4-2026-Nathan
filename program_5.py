@@ -1,8 +1,12 @@
+# By Nathan Nelsen
+# Written 2/13/2026
+# Bank Balance
+
 # Program #5: Bank Balance
 # Write a program that asks the user to enter the amount that he or she has budgeted for a month.
-# A loop should then prompt the user to enter each of his or her expenses for the 
-# month and keep a running total. (Enter 0 to exit the loop)  
-# When the loop finishes, the program should display the amount that the 
+# A loop should then prompt the user to enter each of his or her expenses for the
+# month and keep a running total. (Enter 0 to exit the loop)
+# When the loop finishes, the program should display the amount that the
 # user is over or under budget.
 
 def main():
@@ -11,9 +15,20 @@ def main():
     spent = 1.0         #initialize for while loop
     total = 0.0
 
-    ######################
-    # WRITE YOUR CODE HERE
-    ######################
+    budget = float(input("Enter your monthly budget: "))
+
+    while spent != 0:
+        spent = float(input("Enter an expense (or 0 to stop): "))
+        total = total + spent
+
+    difference = budget - total
+
+    if difference > 0:
+        print("You are under budget by $",difference)
+    elif difference < 0:
+        print("You are over budget by $", abs(difference))
+    else:
+        print("You have spent your budget")
 
 
 if __name__ == '__main__':
