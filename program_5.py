@@ -1,6 +1,6 @@
 # By Nathan Nelsen
 # Written 2/13/2026
-# Bank Balance
+# Budget Analysis
 
 # Program #5: Bank Balance
 # Write a program that asks the user to enter the amount that he or she has budgeted for a month.
