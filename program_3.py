@@ -22,15 +22,15 @@ def main():
         print("Year:", y + 1)
 
         for m in range(12):
-            rain = float(input("Rainfall for month " + str(m+1) + ":"))
+            rain = float(input("Rainfall (in inches) for month " + str(m+1) + ":"))
             total_rain = total_rain + rain
             months = months + 1
 
     average = total_rain / months
 
     print("Total months:", months)
-    print("Total rainfall:", total_rain)
-    print("Average rainfall per month:", average)
+    print("Total rainfall:", total_rain, "inches")
+    print("Average rainfall per month:", average, "inches")
 
 if __name__ == '__main__':
     main()
